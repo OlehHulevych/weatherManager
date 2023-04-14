@@ -1,6 +1,6 @@
 {
   "name": "weather-app",
-  "homepage": "http://OlegProgrammerua.github.io/weatherManager",
+  "homepage": "https://OlegProgrammerua.github.io/weatherManager",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
