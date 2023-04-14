@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/weatherManager/static/css/main.34559679.css",
+    "main.js": "/weatherManager/static/js/main.5231c4c8.js",
+    "index.html": "/weatherManager/index.html",
+    "main.34559679.css.map": "/weatherManager/static/css/main.34559679.css.map",
+    "main.5231c4c8.js.map": "/weatherManager/static/js/main.5231c4c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34559679.css",
+    "static/js/main.5231c4c8.js"
+  ]
+}
