@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+html, body{
+  overflow-x: hidden;
+  height:auto;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+html{
+    
+    scroll-behavior: smooth;
+}
+
+header{
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width:100%;
+  background-color: rgb(38,33,33, 100%);
+  height: 100px;
+  padding:0 15px;
+  color:#fff;
+  align-items: center;
+  
+
+}
+
+
+.header_inner{
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  width: 19%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.clock_text{
+  font-size: 30px;
+}
+
+.logo .logo_img{
+  max-width: 90px;
+  width:100%; 
+}
+.logo .logo_text{
+  max-width: 307px;
+  width:100%; 
+}
+
+
+
+footer{
+  width:100%;
+  
+  position: absolute;
+  padding: 30px 0;
+  background-color: rgb(38,33,33, 100%);
+  text-align: center; 
+  z-index:-1;
+  
+
+
+}
+
+.City_section{
+ 
+  position: fixed;
+  top:0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 70%);
+ 
+  
+
+}
+
+.input_form{
+  
+  position: absolute;
+  text-align: center;
+  top:25%;
+  left:25%;
+  width: 100%;
+  max-width:800px;
+  height: 100%;
+  max-height: 400px;
+  background-color: rgb(48, 22, 7);
+  opacity: 1;
+  transition: all .3s ease-out;
+  
+
+}
+.form_item{
+ text-align: center;
+ align-items: center;
+ padding-top: 150px;
+ text-align: center;
+ 
+
+ 
+}
+
+.form_text{
+  font-size:30px;
+  font-family: 'Roboto', sans-serif;
+  color:#fff;
+  text-transform: uppercase;
+  
+}
+
+.city_input{ 
+  text-align: center;
+  background-color: #fff;
+  width: 75%;
+  border-radius:50px; 
+  border: solid #000 2px;
+  padding: 0 15px;
+  margin-bottom: 15px
+
+}
+
+.btn_city{
+  border-radius: 10px;
+  display:block;
+  width: 25%;
+  height: 3%;
+  background-color: rgb(185, 8, 8);
+  margin: 0 auto;
+}
+
+main{
+  width:100%;
+  background-color:rgb(110, 6, 6);
+  margin-top:100px;
+  height: 700px;
+
+  
+}
+
+.weather_logo{
+  width:10rem;
+  height: 10rem;
+}
+.today_weather{
+  padding-top:30px; 
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather_information{
+  padding-top:20px;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  font-size:16px;
+}
+
+.temp{
+  font-size:24px;
+  font-weight: 600;
+}
+
+.addButton{
+  display: block;
+  padding:10px 20px;
+  border:1px solid #fff;
+  margin-top:30px;
+  text-align: center;
+  margin-right: 10px;
+  cursor:pointer;
+  font-size:20px;
+  border-radius:15px;
+  transition: all .3s ease-in-out;
+}
+
+.addButton:hover{
+  background-color: rgb(117, 8, 8);
+}
+
+.close_btn{
+  font-size:30px;
+  display: flex;
+  float: right;
+  margin: 10px;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.close_btn:hover{
+  color: rgb(168, 39, 39);
+}
+
+.duplicate_error{
+  margin-top:10px;
+  font-size:16px;
+  font-weight: 600;
+  color: rgb(168, 39, 39);
+  
+  
+}
+
+.empty_page{
+  padding-top:30px; 
+  width:100%;
+  text-align: center;
+  color:#fff;
+  transform: translate3d(0,70%, 0)
+  
+  
+
+}
+
+.found_icon{
+  font-size: 72px;
+  color: rgba(255, 255, 255, 70%);
+  margin-bottom: 20px;
+}
+
+.title{
+  font-size:24px;
+  text-transform: uppercase;
+
+}
+
+/* forecast style */
+
+.forecast_item{
+  text-align: center
+}
+
+
+
+.forecast_item img{
+  width:50%;
+ 
+  height:50%;
+  
+}
+
+.forecast{
+  padding-top:60px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.forecast_item .weather_information{
+ padding-top:0; 
+}
+
+.forecast_item .weather_information .temp{
+  font-size:18px
+}
+
+@media(max-width:1024px){
+  .clock_text{
+    font-size: 16px;
+  }
+  .selectedCity{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:775px){
+  .forecast_item img{
+    width:50%;
+    
+  }
+
+  .clock_text{
+    font-size: 14px;
+  }
+
+  .forecast{
+    padding-top:60px;
+    
+    display:flex;
+    flex-direction: row;
+    padding-left:30px;
+    padding-right:50px;
+  }
+
+  
+
+  
+
+  
+
+  
+  
+}
+
+@media(max-width:775px){
+  .forecast_item .weather_information .temp{
+    font-size:14px
+  }
+  .forecast_item .weather_information .date{
+    font-size:14px
+  }
+
+  .forecast{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .forecast_item{
+    width: 50%;
+  }
+}
+
+@media(max-height:1400px){
+  main{
+    height: 1170px;
+  }
+
+  .forecast{
+    padding-top: 200px;
+    padding-right: 50px
+  }
+}
+
+@media(max-height:800px){
+  main{
+    height: 600px;
+  }
+
+  .forecast{
+    padding-top: 60px;
+  }
+
+  
+
+ 
+
+  
+}
+
+@media(max-width:768px){
+  .logo_text{
+    display: none;
+  }
+
+  .header_inner{
+    width: 50%;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width:550px){
+  .input_form{
+    
+    position: absolute;
+    text-align: center;
+    
+    
+    max-width:600px;
+    height: 100%;
+    max-height: 250px;
+    background-color: rgb(48, 22, 7);
+    opacity: 1;
+    transition: all .3s ease-out;
+    
+  
+  }
+
+ 
+
+  .btn_city{
+    width: 50%;
+  }
+
+  .header_inner{
+    width: 50%;
+  }
+
+  .city_input{
+    width: 50%;
+  }
+
+  .form_text{
+    font-size: 20px;
+  }
+
+  .form_item{
+    padding-top: 100px;
+  }
+
+  .logo_text{
+    display: none;
+  }
+}
+
+@media(max-width:500px){
+  .header_inner{
+    text-align: center;
+    vertical-align: middle;
+    align-items: right;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    float: right;
+  }
+
+  .clock_text{
+    display: none;
+    
+  }
+
+  .input_form{
+    top:50%;
+  }
+
+  
+  
+
+  .empty_page{
+    padding-top: 300px;
+  }
+
+  .addButton{
+    font-size: 16px;
+  }
+
+ 
+
+ 
+
+  .forecast{
+    padding-top:60px;
+    width:100%; 
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction:row;
+    padding-left:0;
+    padding-right:0;
+
+  }
+  
+
+}
+
+
+@media(max-height:750px){
+  main{
+    height: 1000px;
+  }
+}
+
+@media(max-height:430px){
+  main{
+    height: 1200px;
+  }
+
+  .input_form{
+    top:8%;
+    max-height: 400px;
+    padding: 0;
+  }
+
+  
+}
+
+@media(max-width:300px){
+  .header_inner{
+    width: 50%;
+  }
+
+ .footer_logo img{
+   width: 50%;
+ }
+}
+
+
+
+
+
